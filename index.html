@@ -1,0 +1,63 @@
+
+<html>
+  <head>
+    <title>Hand Gestures</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+
+      <br><br>
+<h1>Hand Gesture Guesser</h1>
+
+<br>
+      <p style="font-size: 22px;">Take your selfie to generate emoji
+      	<hr>
+        <b style="font-size:30px;">Hand Gestures it Recognizes:</b>
+        <hr>
+        <b style="color: blue">Peace</b>
+        <hr>
+        <b style="color: red">Good Job(Thumbs Up)</b>
+        <hr>
+        <b style="color: purple">Live Long and Prosper</b>
+        <hr>
+        <br>
+        <br>
+      </p>
+      <div id="button1" class="col-md-4 col-sm-12 col-xs-12">
+        <label>Webcam - </label>
+        <div id="camera"></div>
+        <br>
+        <br>
+        <button id="take_image" onclick="takepicture();">Take Picture</button>
+      </div>
+      <div id="button2" class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Snapshot - </label>
+        <div id="result"></div>
+        <br>
+        <br>
+        <button id="id_img" onclick="analyze_picture();">Identify Emotion</button>
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+
+ 
